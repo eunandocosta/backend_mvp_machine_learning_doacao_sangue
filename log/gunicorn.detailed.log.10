@@ -1,0 +1,95 @@
+[2023-12-12 01:39:56,239] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:39:59,660] ERROR insert() L134  Erro inesperado ao inserir doador: 'DonatorSchema' object has no attribute 'get' - call_trace=C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\sprint 2\red_flow\backend\app.py L134 
+Traceback (most recent call last):
+  File "C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\sprint 2\red_flow\backend\app.py", line 109, in insert
+    outcome=ModelSchema.predicao(modelo, form)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\sprint 2\red_flow\backend\schemas\donator_schema.py", line 85, in predicao
+    outcome_value = form.get('outcome', 0)
+                    ^^^^^^^^
+AttributeError: 'DonatorSchema' object has no attribute 'get'
+[2023-12-12 01:39:59,667] ERROR log_exception() L1414 Exception on /swagger/novodoador [POST] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1820, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type AttributeError is not JSON serializable
+[2023-12-12 01:39:59,672] INFO _log() L187  127.0.0.1 - - [12/Dec/2023 01:39:59] "[35m[1mPOST /swagger/novodoador HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:40:45,425] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:40:45,563] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:40:48,955] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:40:49,001] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:16,938] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:17,001] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:21,672] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:21,722] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:59,440] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:41:59,510] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:02,128] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:02,185] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:10,359] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:13,721] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:13,776] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:39,195] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:39,247] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:42:41,847] ERROR log_exception() L1414 Exception on /swagger/novodoador [POST] - call_trace=C:\Python311\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 127, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fmsco\OneDrive\Área de Trabalho\Códigos Pós\sprint 2\red_flow\backend\app.py", line 89, in insert
+    new_form = form_dict.outcome.pop('outcome', None)
+               ^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'outcome'
+[2023-12-12 01:42:41,851] INFO _log() L187  127.0.0.1 - - [12/Dec/2023 01:42:41] "[35m[1mPOST /swagger/novodoador HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:43:57,111] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:43:57,162] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:03,010] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:03,059] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:03,842] INFO _log() L187  127.0.0.1 - - [12/Dec/2023 01:44:03] "[35m[1mPOST /swagger/novodoador HTTP/1.1[0m" 500 - - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:30,839] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:30,882] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:58,957] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:44:59,004] INFO _log() L187   * Restarting with stat - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-12-12 01:45:05,995] INFO _log() L187   * Detected change in 'C:\\Users\\fmsco\\OneDrive\\Área de Trabalho\\Códigos Pós\\sprint 2\\red_flow\\backend\\app.py', reloading - call_trace=C:\Python311\Lib\site-packages\werkzeug\_internal.py L187 
