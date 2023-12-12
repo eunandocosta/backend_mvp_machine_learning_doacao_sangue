@@ -86,7 +86,8 @@ class ModelSchema:
 
         x_input = np.array([form['recency'], form['frequency'], form['monetary'], form['time']])
 
-        # Assuming form['cpf'], form['recency'], etc. are numeric values
+        print(model)
+
         diagnostico = model.predict(x_input.reshape(1, -1))
         return int(diagnostico[0])
     
