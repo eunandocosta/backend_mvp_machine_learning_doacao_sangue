@@ -9,11 +9,17 @@ O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da 
 
 Deve-se acessar a pasta backend através de: cd backend
 
+> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
+
+Para isso execute: 
+1 - python -m venv venv.
+
+2 - venv/scripts/activate
+
+> Este repositório contém uma pasta venv, mas você pode optar não utilizar excluindo ela ou apenas executando o comando de requirements que será explicado a seguir, o que adicionará as bibliotecas necessárias.
 
 Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
 Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
-
-> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
 
 ```
 (env)$ pip install -r requirements.txt
